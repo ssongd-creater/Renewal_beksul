@@ -30,7 +30,9 @@ body{font-family: 'Montserrat','Noto Sans KR', sans-serif; height:3000px;}
 .main_imgs .main_img{overflow: hidden; position:relative;}
 .main_imgs .main_photo{width:100%; height:auto; min-width: 960px;max-height: 644px; }
 .main_imgs .main_logo{position:absolute;top:50%; left:50%; transform: translate(-50%,-50%);width:15%; animation-name: mainup; animation-fill-mode: forwards; animation-delay: 0.5s; animation-duration: 1s;}
-.main_imgs .main_button{position:absolute; background:#8d2125; padding:13px 25px;bottom:0;left:50%; transform: translateX(-50%); animation-name: mainbtn; animation-delay: 0.5s; animation-duration: 0.7s; animation-fill-mode: forwards;}
+.main_imgs .main_button{position:absolute; background:#8d2125; padding:13px 25px;bottom:0;left:50%; transform: translateX(-50%); animation-name: mainbtn; animation-delay: 0.5s; animation-duration: 0.7s; animation-fill-mode: forwards; opacity:0;}
+.main_imgs .main_button.btneff{animation-duration: 0.7s; animation-name:btndown; animation-fill-mode: forwards; animation-delay:now;}
+.main_imgs .main_button.btnup{animation-duration: 0.7s; animation-name:btnup; animation-fill-mode: forwards; animation-delay:now;}
 .main_imgs .main_button span{color:#fff; font-size:14px; font-weight: 500;;}
 
 @keyframes mainup{
@@ -44,6 +46,16 @@ body{font-family: 'Montserrat','Noto Sans KR', sans-serif; height:3000px;}
 }
 
 @keyframes mainbtn{
+  from{opacity:0;}
+  to{opacity:1;}
+}
+
+@keyframes btndown{
+  from{opacity:0;}
+  to{opacity:1;}
+}
+
+@keyframes btnup{
   from{opacity:0;}
   to{opacity:1;}
 }
