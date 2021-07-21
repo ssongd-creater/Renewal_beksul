@@ -30,9 +30,9 @@ body{font-family: 'Montserrat','Noto Sans KR', sans-serif; height:3000px;}
 .main_imgs .main_img{overflow: hidden; position:relative;}
 .main_imgs .main_photo{width:100%; height:auto; min-width: 960px;max-height: 644px; }
 .main_imgs .main_logo{position:absolute;top:50%; left:50%; transform: translate(-50%,-50%);width:15%; animation-name: mainup; animation-fill-mode: forwards; animation-delay: 0.5s; animation-duration: 1s;}
-.main_imgs .main_button{position:fixed; width:150px; height:40px; text-align:center; line-height:35px;background:#8d2125;left:50%; transform: translateX(-50%); animation-name: mainbtn; animation-delay: 0.5s; animation-duration: 0.7s; animation-fill-mode: forwards; opacity:0; _transition: all 1s; bottom:241px;}
-.main_imgs .main_button.btndown{animation-duration: 0.7s; animation-name:btndown; animation-fill-mode: forwards; color:#fff; bottom:0;left:100%;transform:translateX(-100%);}
-.main_imgs .main_button.btnup{animation-duration: 0.7s; animation-name:btnup; animation-fill-mode: forwards; animation-delay:now; color:#fff; font-size:14px;font-family: 'Montserrat','Noto Sans KR', sans-serif; font-weight:500;}
+.main_imgs .main_button{position:absolute; width:200px; height:50px; text-align:center; line-height:50px;background:#8d2125;left:50%; transform: translateX(-50%); animation-name: mainbtn; animation-delay: 0.5s; animation-duration: 0.7s; animation-fill-mode: forwards; opacity:0; _transition: all 1s; bottom:0;}
+.main_imgs .main_button.btndown{animation-duration: 0.7s; animation-name:btndown; animation-fill-mode: forwards; position:fixed;transform:translateX(-100%);}
+.main_imgs .main_button.btnup{animation-duration: 0.7s; animation-name:btnup; animation-fill-mode: forwards; }
 .main_imgs .main_button span{color:#fff; font-size:14px; font-weight: 500;;}
 
 @keyframes mainup{
@@ -53,10 +53,11 @@ body{font-family: 'Montserrat','Noto Sans KR', sans-serif; height:3000px;}
 @keyframes btndown{
   from{opacity:0;
   }
-  to{opacity:1;}
+  to{opacity:1;
+  color:#fff; bottom:0;left:100%; width:60px;}
 }
 
 @keyframes btnup{
   from{opacity:0;}
-  to{opacity:1;}
+  to{opacity:1;color:#fff; font-size:15px;font-family: 'Montserrat','Noto Sans KR', sans-serif; font-weight:500;}
 }

@@ -1,4 +1,16 @@
 $(function () {
+  // let navHeight = $(".navi").outerHeight();
+  // let imgHeight = $(".main_photo").outerHeight();
+  // let btnHeight = $(".main_button").outerHeight();
+  // let imgWidth = $(".main_photo").outerWidth();
+  // const test = $(".main_button");
+
+  // const imgButton = navHeight + imgHeight;
+  // const btnFix = imgButton - btnHeight;
+  // //console.log(navHeight);
+  // test.offset({btnFix}).top;
+  // console.log(btnFix);
+  
   $(window).on("scroll", function () {
     let scroll_btn = $(this).scrollTop();
 
@@ -21,9 +33,7 @@ $(function () {
 
 
 
-  let imgHeight = $(".main_photo").height();
-
-  console.log(imgHeight);
+  
 
 
 
