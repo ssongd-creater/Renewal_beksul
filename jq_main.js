@@ -20,6 +20,8 @@ $(function () {
       $(".main_button").removeClass('btnup');
       $(".main_button").addClass('btndown');
       $(".main_button").html('<i class= "fa fa-angle-up"></i>');
+      $(".information").addClass('show_ani');
+      $(".info_img").addClass('show_ani');
     } else {
       //$(".main_button").addClass = ('btneff');
 
@@ -28,6 +30,16 @@ $(function () {
       $(".main_button").addClass('btnup');
       $(".main_button").html('SCROLL DOWN <i class= "fa fa-angle-down"></i>');
       
+    }
+
+    if (scroll_btn >= 1090) {
+      $(".sub_infoimg").show();
+      $(".sub_infoimg").addClass('show_ani');
+      $(".sub_infoimg .sub_imgs").addClass('show_ani');
+      $(".sub_infoimg .sub_imgs div").addClass('show_ani');
+
+    } else {
+      $(".sub_infoimg").hide();
     }
   });
 
