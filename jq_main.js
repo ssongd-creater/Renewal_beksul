@@ -16,7 +16,6 @@ $(function () {
 
     //console.log(scroll_btn);
     if (scroll_btn !== 0) {
-      
       $(".main_button").removeClass('btnup');
       $(".main_button").addClass('btndown');
       $(".main_button").html('<i class= "fa fa-angle-up"></i>');
@@ -25,11 +24,9 @@ $(function () {
     } else {
       //$(".main_button").addClass = ('btneff');
 
-      
       $(".main_button").removeClass('btndown');
       $(".main_button").addClass('btnup');
       $(".main_button").html('SCROLL DOWN <i class= "fa fa-angle-down"></i>');
-      
     }
 
     if (scroll_btn >= 1090) {
@@ -38,8 +35,15 @@ $(function () {
       $(".sub_infoimg .sub_imgs").addClass('show_ani');
       $(".sub_infoimg .sub_imgs div").addClass('show_ani');
 
+    };
+
+    if (scroll_btn >= 2173) {
+      $(".color_logo .off").hide();
+      $(".color_logo .on").show();
     } else {
-      $(".sub_infoimg").hide();
+      $(".color_logo .on").hide();
+      $(".color_logo .off").show();
+
     }
   });
 
