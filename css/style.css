@@ -61,26 +61,30 @@ body{font-family: 'Montserrat','Noto Sans KR', sans-serif; height:3000px;}
 .sub_infoimg .sub_bg .symbol .sub_imgs .img4{width:calc(25% - 5px); height:250px; background:no-repeat center url(/renewal_beksul/img/beksul_brand/beksul_b_obj_4.jpg);animation-delay: 2.2s; opacity:0;}
 
 /* Histoty Style Code */
+
+
 .history{width:100%; height: auto; padding:50px 0; background:url(/renewal_beksul/img/beksul_brand/beksul_b_bg_2.gif);}
-.history .history_bg{width:100%; height:auto;display:flex; flex-direction: column; align-items: center; padding:100px 0;}
+.history .history_bg{width:100%; height:auto; padding:100px 0;}
 .history .history_bg h3{font-size:23px; font-weight: 400;}
 .history .history_bg p {font-size:18px;}
-.history .history_bg .sugar_img{padding:20px 0 100px 0;}
 
-.history .history_bg .history_wrap{width:100%; height:1904px; position:relative; }
+.history .history_wrap .history_line{position:absolute;width:2px; height:1904px; left:50%; transform: translateX(-50%);background:no-repeat url(/renewal_beksul/img/beksul_brand/beksul_history_line.png);top:500px;}
 
-.history .history_bg .history_line{width:2px; height:1904px; background:no-repeat url(/renewal_beksul/img/beksul_brand/beksul_history_line.png); position: absolute;left:50%; transform: translateX(-50%);}
-.history .history_bg .color_logo{position: absolute; right:-15px; top:-40px;}
-.history .history_bg .history_line p:nth-of-type(1){font-size:18px}
-.history .history_bg .history_line p:nth-of-type(2){font-size:16px;}
+.history .history_bg .history_wrap{width:1024px; height:1904px; margin:auto;position:relative; }
 
-.history .history_wrap .first_history{width:147px; height:auto; position:absolute; text-align: center; left:340px; top:-35px;}
-.history .history_wrap .first_history p:nth-of-type(1){font-size:23px; font-weight: 400;}
-.history .history_wrap .first_history p:nth-of-type(2){font-size:18px; font-weight:400; margin:7px 0 40px 0;}
-.history .history_wrap .beksul_ss{position: absolute; top:-30px; left:170px;}
+.history .history_bg .history_wrap .history_1st{position:absolute;left:50%; transform: translateX(-50%); text-align: center;}
+.history .history_bg .history_wrap .history_1st img{padding:20px 0;}
 
-.history .history_wrap .first_history.right{width:147px; height:auto; position:absolute; text-align: center; left:700px; top:140px;}
-.history .history_wrap .first_history.right p:nth-of-type(1){font-size:23px; font-weight: 400;}
-.history .history_wrap .first_history.right p:nth-of-type(2){font-size:18px; font-weight:400; margin:7px 0 40px 0;}
-.history .history_wrap .first_history.right img{position:absolute; left:20px;}
-.history .history_wrap .beksul_ss{position: absolute; top:150px; left:900px;}
+.history .history_bg .history_wrap .left_history_1st{width:147px; height:auto; text-align: center;position: absolute; top:410px; left:20%;}
+.history .history_bg .history_wrap .left_history_1st::before{content:""; width:107px; height:33px; background:url(/renewal_beksul/img/beksul_brand/beksul_left_off.png); position:absolute; left:216px; top:40px;}
+.history .history_bg .history_wrap .left_history_1st p:nth-of-type(1){font-size:23px;}
+.history .history_bg .history_wrap .left_history_1st p:nth-of-type(2){margin:5px 0 40px 0;}
+.history .history_bg .history_wrap .beksul_ss{position: absolute; top:410px; left:3%;}
+
+.history .history_bg .history_wrap .right_history_1st{width:147px; height:auto; text-align: center;position: absolute; top:650px; right:20%;}
+.history .history_bg .history_wrap .right_history_1st p:nth-of-type(1){font-size:23px;}
+.history .history_bg .history_wrap .right_history_1st p:nth-of-type(2){margin:5px 0 40px 0;}
+.history .history_bg .history_wrap .right_history_1st img{width:117px; margin:auto;}
+.history .history_bg .history_wrap .millgaru{position: absolute; top:685px; right:0%;}
+
+.active::before{background:url(/renewal_beksul/img/beksul_brand/beksul_left_on.png) !important;}

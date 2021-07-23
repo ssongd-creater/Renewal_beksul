@@ -38,12 +38,10 @@ $(function () {
     };
 
     if (scroll_btn >= 2173) {
-      $(".color_logo .off").hide();
-      $(".color_logo .on").show();
+      $(".left_history_1st").addClass("active");
+      $(".left_history_1st").css("!important");
     } else {
-      $(".color_logo .on").hide();
-      $(".color_logo .off").show();
-
+      $(".left_history_1st").removeClass("active");
     }
   });
 
