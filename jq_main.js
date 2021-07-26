@@ -60,16 +60,66 @@ $(function () {
       $(".right_history_2nd").removeClass("active_right_1");
     }
 
-    // if (scroll_btn >= 2900) {
-    //   $(".left_history_1st").removeClass("active_left_1");
-    //   $(".right_history_1st").removeClass("active_right_1");
-    //   $(".left_history_2nd").removeClass("active_left_1");
-    //   $(".right_history_2nd").removeClass("active_right_1");
-    //   $(".middle_logo").show(this.before)
-    // } else {
-    //   $(".right_history_2nd").removeClass("active_right_1");
-    //   $(".middle_logo::before").hide(this.before);
-      //}
+    if (scroll_btn >= 3100) {
+      $(".left_history_1st").removeClass("active_left_1");
+      $(".right_history_1st").removeClass("active_right_1");
+      $(".left_history_2nd").removeClass("active_left_1");
+      $(".right_history_2nd").removeClass("active_right_1");
+      $(".middle_logo").addClass("active_middle");
+      $(".middle_logo").css("!important");
+    } else {
+      $(".middle_logo").removeClass("active_middle");
+    }
+
+    if (scroll_btn >= 3600) {
+      $(".left_history_1st").removeClass("active_left_1");
+      $(".right_history_1st").removeClass("active_right_1");
+      $(".left_history_2nd").removeClass("active_left_1");
+      $(".right_history_2nd").removeClass("active_right_1");
+      $(".middle_logo").removeClass("active_middle");
+      $(".left_history_3rd").addClass("active_left_1");
+    } else {
+      $(".left_history_3rd").removeClass("active_left_1");
+    }
+
+    if (scroll_btn >= 3860) {
+      $(".left_history_1st").removeClass("active_left_1");
+      $(".right_history_1st").removeClass("active_right_1");
+      $(".left_history_2nd").removeClass("active_left_1");
+      $(".right_history_2nd").removeClass("active_right_1");
+      $(".middle_logo").removeClass("active_middle");
+      $(".left_history_3rd").removeClass("active_left_1");
+      $(".right_history_3rd").addClass("active_right_1");
+    } else {
+      $(".right_history_3rd").removeClass("active_right_1");
+    }
+
+    if (scroll_btn >= 4050) {
+      $(".left_history_1st").removeClass("active_left_1");
+      $(".right_history_1st").removeClass("active_right_1");
+      $(".left_history_2nd").removeClass("active_left_1");
+      $(".right_history_2nd").removeClass("active_right_1");
+      $(".middle_logo").removeClass("active_middle");
+      $(".left_history_3rd").removeClass("active_left_1");
+      $(".right_history_3rd").removeClass("active_right_1");
+      $(".left_history_4rd").addClass("active_left_1");
+    } else {
+      $(".left_history_4rd").removeClass("active_left_1");
+    }
+
+    if (scroll_btn >= 4200) {
+      $(".left_history_1st").removeClass("active_left_1");
+      $(".right_history_1st").removeClass("active_right_1");
+      $(".left_history_2nd").removeClass("active_left_1");
+      $(".right_history_2nd").removeClass("active_right_1");
+      $(".middle_logo").removeClass("active_middle");
+      $(".left_history_3rd").removeClass("active_left_1");
+      $(".right_history_3rd").removeClass("active_right_1");
+      $(".left_history_4rd").removeClass("active_left_1");
+      $(".right_history_4rd").addClass("active_right_1");
+    } else {
+      $(".right_history_4rd").removeClass("active_right_1");
+    }
   });
 
 
