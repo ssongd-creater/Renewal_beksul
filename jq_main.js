@@ -1,20 +1,9 @@
 $(function () {
-  // let navHeight = $(".navi").outerHeight();
-  // let imgHeight = $(".main_photo").outerHeight();
-  // let btnHeight = $(".main_button").outerHeight();
-  // let imgWidth = $(".main_photo").outerWidth();
-  // const test = $(".main_button");
-
-  // const imgButton = navHeight + imgHeight;
-  // const btnFix = imgButton - btnHeight;
-  // //console.log(navHeight);
-  // test.offset({btnFix}).top;
-  // console.log(btnFix);
   
   $(window).on("scroll", function () {
     let scroll_btn = $(this).scrollTop();
 
-    //console.log(scroll_btn);
+    console.log(scroll_btn);
     if (scroll_btn !== 0) {
       $(".main_button").removeClass('btnup');
       $(".main_button").addClass('btndown');
@@ -38,11 +27,49 @@ $(function () {
     };
 
     if (scroll_btn >= 2173) {
-      $(".left_history_1st").addClass("active");
+      $(".left_history_1st").addClass("active_left_1");
       $(".left_history_1st").css("!important");
+    }else {
+      $(".left_history_1st").removeClass("active_left_1");
+    };
+
+    if (scroll_btn >= 2430) {
+      $(".left_history_1st").removeClass("active_left_1");
+      $(".right_history_1st").addClass("active_right_1");
+      $(".right_history_1st").css("!important");
     } else {
-      $(".left_history_1st").removeClass("active");
+      $(".right_history_1st").removeClass("active_right_1");
     }
+
+    if (scroll_btn >= 2710) {
+      $(".left_history_1st").removeClass("active_left_1");
+      $(".right_history_1st").removeClass("active_right_1");
+      $(".left_history_2nd").addClass("active_left_1");
+      $("left_history_2nd").css("!important");
+    } else {
+      $(".left_history_2nd").removeClass("active_left_1");
+    }
+
+    if (scroll_btn >= 2900) {
+      $(".left_history_1st").removeClass("active_left_1");
+      $(".right_history_1st").removeClass("active_right_1");
+      $(".left_history_2nd").removeClass("active_left_1");
+      $(".right_history_2nd").addClass("active_right_1");
+      $("right_history_2nd").css("!important");
+    } else {
+      $(".right_history_2nd").removeClass("active_right_1");
+    }
+
+    // if (scroll_btn >= 2900) {
+    //   $(".left_history_1st").removeClass("active_left_1");
+    //   $(".right_history_1st").removeClass("active_right_1");
+    //   $(".left_history_2nd").removeClass("active_left_1");
+    //   $(".right_history_2nd").removeClass("active_right_1");
+    //   $(".middle_logo").show(this.before)
+    // } else {
+    //   $(".right_history_2nd").removeClass("active_right_1");
+    //   $(".middle_logo::before").hide(this.before);
+      //}
   });
 
 
