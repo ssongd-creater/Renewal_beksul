@@ -7,7 +7,7 @@ input,button,textarea {outline: 0; border-radius: 0; border:0; padding:10px; col
 input::placeholder{color:#ccc;}
 textarea{resize:none;}
 body{font-family: 'Montserrat','Noto Sans KR', sans-serif; height:100vh;}
-.center {width:90%; margin:auto; padding:80px 0;}
+.center {width:90%; margin:auto; padding:80px 0; overflow:hidden;}
 
 .show_ani{animation:1s linear forwards showani;}
 .active_left_1::before{background:url(/renewal_beksul/img/beksul_brand/beksul_left_on.png) !important;}
@@ -20,6 +20,9 @@ body{font-family: 'Montserrat','Noto Sans KR', sans-serif; height:100vh;}
 .navi header .logo_section{display: flex;}
 .navi header .nav_txt{display: flex; align-items: center;}
 .navi header .nav_txt p{font-size:16px; font-weight:600; padding:0 15px;}
+
+.navi header .nav_bars{width:100%; height:auto; padding:0 20px;display:none;}
+.navi header .nav_bars i{font-size:20px; color:#666;}
 
 .navi header .nav_icon{display: flex; align-items: center;}
 .navi header .nav_icon i{font-size:20px; margin:0 10px;}
@@ -35,15 +38,15 @@ body{font-family: 'Montserrat','Noto Sans KR', sans-serif; height:100vh;}
 .main_imgs{width:100%; height:auto;}
 .main_imgs .main_img{overflow: hidden; position:relative;}
 .main_imgs .main_photo{width:100%; height:auto; min-width: 960px;max-height: 644px; }
-.main_imgs .main_logo{position:absolute;top:50%; left:50%; transform: translate(-50%,-50%);width:15%; animation-name: mainup; animation-fill-mode: forwards; animation-delay: 0.5s; animation-duration: 1s;}
+.main_imgs .main_logo{position:absolute;top:50%; left:50%; transform: translate(-50%,-50%);max-width:190px; animation-name: mainup; animation-fill-mode: forwards; animation-delay: 0.5s; animation-duration: 1s;}
 .main_imgs .main_button{position:absolute; width:200px; height:50px; text-align:center; line-height:50px;background:#8d2125;left:50%; transform: translateX(-50%); animation-name: mainbtn; animation-delay: 0.5s; animation-duration: 0.7s; animation-fill-mode: forwards; opacity:0; transition: all 1s; bottom:0;}
-.main_imgs .main_button.btndown{position:fixed;transform:translateX(-100%); animation:0.7s ease-in forwards btndown}
-.main_imgs .main_button.btnup{animation:0.7s ease-in forwards btnup;}
+.main_imgs .main_button.btndown{position:fixed; animation:ease forwards btndown;animation-duration: 0.7s;}
+.main_imgs .main_button.btnup{animation:0.7s ease-in forwards btnup;animation-duration: 0.7s}
 .main_imgs .main_button span{color:#fff; font-size:14px; font-weight: 500;;}
 
 /* Subpage Infomation Style Code */
 .sub_info{height: auto;;}
-.sub_info .information{opacity:0;height:800px; background: url(/renewal_beksul/img/beksul_brand/beksul_a_obj_1.jpg);padding:100px 200px;margin:auto;animation-delay: 0.3s;}
+.sub_info .information{opacity:0;height:800px; background: center center url(/renewal_beksul/img/beksul_brand/beksul_a_obj_1.jpg);padding:100px 200px;margin:auto;animation-delay: 0.3s;}
 .sub_info .information .info_img{opacity:0;width:600px;height:100%;margin:auto;background:center rgba(66, 34, 13, 0.92);position:relative; padding:20px;animation-delay: 1s;}
 .sub_info .information .info_img .info_txt{text-align: center; color:#fff;}
 .sub_info .information .info_img .info_txt h1{font-size:50px; font-weight: 400;padding:50px 0 30px 0;;}
