@@ -3,7 +3,7 @@ $(function () {
   $(window).on("scroll", function () {
     let scroll_btn = $(this).scrollTop();
 
-    console.log(scroll_btn);
+    //console.log(scroll_btn);
     if (scroll_btn !== 0) {
       $(".main_button").removeClass('btnup');
       $(".main_button").addClass('btndown');

@@ -34,7 +34,7 @@
   .history .history_bg .history_wrap .right_history_3rd p:nth-of-type(2),
   .history .history_bg .history_wrap .left_history_4rd p:nth-of-type(2),
   .history .history_bg .history_wrap .right_history_4rd p:nth-of-type(2)
-  {margin:5px 0 30px 0;font-size:16px;}
+  {margin:5px 0 20px 0;font-size:16px;}
   .history .history_bg .history_wrap .left_history_1st img{width:130px;}
   .history .history_bg .history_wrap .beksul_ss{top:420px;left:7%;width:90px;}
   /* End of History font-size Style Code */
@@ -73,7 +73,21 @@
   .sub_infoimg .sub_bg .symbol p{font-size:16px;}
 
    /* History Style Code */
-    /* History::before 위치 조정 */
+  .history .history_bg .history_wrap{width:500px;}
+  .history .history_bg .history_wrap .left_history_1st{width:110px;}
+  .history .history_bg .history_wrap .left_history_1st img{width:110px;margin:auto;}
+  .history .history_bg .history_wrap .right_history_1st{width:112px;}
+  .history .history_bg .history_wrap .right_history_2nd{width:130px;}
+  .history .history_bg .history_wrap .right_history_2nd img{width:130px;margin:auto;}
+  .history .history_bg .history_wrap .left_history_3rd{width:150px; left:13%}
+  .history .history_bg .history_wrap .left_history_3rd img{width:150px;}
+  .history .history_bg .history_wrap .right_history_3rd{width:130px;}
+  .history .history_bg .history_wrap .right_history_3rd img{width:130px;}
+  .history .history_bg .history_wrap .left_history_4rd{left:16%;}
+  .history .history_bg .history_wrap .right_history_4rd{width:150px; right:14%;}
+  .history .history_bg .history_wrap .right_history_4rd img{width:150px;}
+
+    /* History::before ::after display 조정 */
   .history .history_bg .history_wrap .left_history_1st::before{display:none;}
   .history .history_bg .history_wrap .right_history_1st::before{display:none;}
   .history .history_bg .history_wrap .left_history_2nd::before{display:none;}
@@ -82,6 +96,16 @@
   .history .history_bg .history_wrap .right_history_3rd::before{display:none;}
   .history .history_bg .history_wrap .left_history_4rd::before{display:none;}
   .history .history_bg .history_wrap .right_history_4rd::before{display:none;}
+
+  .history .history_bg .history_wrap .left_history_1st::after{display:block;left:134px;}
+  .history .history_bg .history_wrap .right_history_1st::after{display:block;right:134px;}
+  .history .history_bg .history_wrap .left_history_2nd::after{display:block;left:120px;}
+  .history .history_bg .history_wrap .right_history_2nd::after{display:block;right:148.5px;}
+  .history .history_bg .history_wrap .left_history_3rd::after{display:block;
+  left:169px;}
+  .history .history_bg .history_wrap .right_history_3rd::after{display:block;right:148.5px;}
+  .history .history_bg .history_wrap .left_history_4rd::after{display:block;left:154px;}
+  .history .history_bg .history_wrap .right_history_4rd::after{display:block;right:164px;}
 }
 
 @media screen and (max-width:650px){
@@ -112,6 +136,53 @@
   .sub_infoimg .sub_bg .symbol .sub_imgs .img2{width:100%;}
   .sub_infoimg .sub_bg .symbol .sub_imgs .img3,
   .sub_infoimg .sub_bg .symbol .sub_imgs .img4{display:none;}
+
+   /* History Style Code */
+  .history .history_bg .history_wrap{width:300px;}
+  .history .history_wrap .history_line{display:none;}
+  
+  .history .history_bg .history_wrap .history_1st{top:-145px;}
+  .history .history_bg .history_wrap .history_1st img{width:120px;}
+  .history .history_bg .history_wrap .left_history_1st{top:210px;}
+  .history .history_bg .history_wrap .right_history_1st{top:425px;}
+  .history .history_bg .history_wrap .right_history_1st img{width:100px;}
+  .history .history_bg .history_wrap .left_history_2nd{top:740px;}
+  .history .history_bg .history_wrap .left_history_2nd span{margin:5px 0 10px 0;}
+  .history .history_bg .history_wrap .left_history_2nd img{width:68px;margin:5px auto;}
+  .history .history_bg .history_wrap .right_history_2nd{top:1102px;}
+  .history .history_bg .history_wrap .middle_logo{top:1315px;}
+  .history .history_bg .history_wrap .middle_logo p{display:none;}
+  .history .history_bg .history_wrap .middle_logo img{width:170px;}
+  .history .history_bg .history_wrap .middle_logo::before{top:-53px;}
+  .history .history_bg .history_wrap .left_history_3rd{width:130px; top:1535px;}
+  .history .history_bg .history_wrap .left_history_img{width:130px;}
+  .history .history_bg .history_wrap .right_history_3rd{top:1795px;}
+  .history .history_bg .history_wrap .right_history_3rd img{width:100px;}
+  .history .history_bg .history_wrap .left_history_4rd{top:2083px;}
+  .history .history_bg .history_wrap .right_history_4rd{top:2375px;}
+  .history .history_bg .history_wrap .left_history_4rd img{width:100px; margin:auto;}
+  
+
+  /* History ::After Style Code */
+  .history .history_bg .history_wrap .left_history_1st::after{left:50%;transform:translateX(-50%); top:-39%;}
+  .history .history_bg .history_wrap .right_history_1st::after{left:50%;transform:translateX(-50%); top:-24%;}
+  .history .history_bg .history_wrap .left_history_2nd::after{left:50%;transform:translateX(-50%); top:-21%;}
+  .history .history_bg .history_wrap .right_history_2nd::after{left:50%;transform:translateX(-50%); top:-41%;}
+  .history .history_bg .history_wrap .left_history_3rd::after{left:50%;transform:translateX(-50%); top:-27%;}
+  .history .history_bg .history_wrap .right_history_3rd::after{left:50%;transform:translateX(-50%);top:-27%;}
+  .history .history_bg .history_wrap .left_history_4rd::after{left:50%;transform:translateX(-50%);top:-30%;}
+  .history .history_bg .history_wrap .right_history_4rd::after{left:50%;transform:translateX(-50%);top:-45%;}
+
+/* History Common Style Code */
+  .history .history_bg .history_wrap .left_history_1st,
+  .history .history_bg .history_wrap .left_history_2nd,
+  .history .history_bg .history_wrap .left_history_3rd,
+  .history .history_bg .history_wrap .left_history_4rd{left:50%;transform: translateX(-50%);}
+
+  .history .history_bg .history_wrap .right_history_1st,
+  .history .history_bg .history_wrap .right_history_2nd,
+  .history .history_bg .history_wrap .right_history_3rd,
+  .history .history_bg .history_wrap .right_history_4rd{right:0;left:50%;transform: translateX(-50%);}
 
 }
 
