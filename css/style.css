@@ -168,9 +168,9 @@ body{font-family: 'Montserrat','Noto Sans KR', sans-serif; height:100vh;}
 .history .history_bg .history_wrap .right_history_4rd::after{content:""; width:32px; height:33px; background:url(/renewal_beksul/img/beksul_brand/beksul_bot_off.png); position:absolute; right:231px; top:98px;display: none;}
 
 /* Middle Subpage Style Code */
-.middle_container{width:100%; height:1350px; background:no-repeat url(/renewal_beksul/img/beksul_brand/beksul_c_bg_1.jpg); padding:150px; }
-.middle_container .middle_wrap{width:100%; height: auto; display:flex; align-items: center; justify-content: space-between;max-width:1350px;margin:auto;}
-.middle_container .middle_wrap .mid_img{width:100%; height: 824px; background:no-repeat url(/renewal_beksul/img/beksul_brand/beksul_c_obj_1.jpg);}
+.middle_container{width:100%; height:1500px; background:url(/renewal_beksul/img/beksul_brand/beksul_c_bg_1.jpg);}
+.middle_container .middle_wrap{width:90%; height: auto; display:flex; align-items: center; justify-content: space-between;margin:auto;}
+.middle_container .middle_wrap .mid_img{width:100%; height: 824px; background:center no-repeat url(/renewal_beksul/img/beksul_brand/beksul_c_obj_1.jpg);}
 .middle_container .middle_wrap .mid_txt{display: flex; flex-direction: column; width:100%;}
 .middle_container .middle_wrap .txt_story{padding:50px 10px; animation-delay: 0.5s; animation-name: showani;opacity:0; animation-fill-mode:forwards;animation-duration: 1s;}
 .middle_container .middle_wrap .txt_story p{font-size:40px; color:#6f4339;}
@@ -181,7 +181,7 @@ body{font-family: 'Montserrat','Noto Sans KR', sans-serif; height:100vh;}
 .middle_container .with_beksul p{font-size:28px; color:#6f4339;text-align: center;animation-delay: 0.5s; animation-name: showani;opacity:0; animation-fill-mode:forwards;animation-duration: 1s;}
 .middle_container .with_beksul::before{content: ""; position: absolute; background:url(/renewal_beksul/img/beksul_brand/beksul_c_ldquo.png);width:86px; height:78px;top:50px;left:10px;}
 
-.beksul_family{max-width:100%; height:1080px; background:center top no-repeat url(/renewal_beksul/img/beksul_brand/beksul_d_bg01.jpg);position:relative; background-size:contain;}
+.beksul_family{width:auto;position:relative; background-size:contain; margin:0 auto;}
 .beksul_family h3{font-size:60px; font-weight: 700; color:#4e2b15;position: absolute; left:50%; top:50%; transform: translate(-50%,-50%); border-top:1px solid #c8bbb5; border-bottom: 1px solid #c8bbb5;padding:15px 0;}
 .beksul_family .text_wrap p{position:absolute; font-size:20px;}
 .beksul_family .text_wrap p:nth-of-type(1){top:29%; left:19.5%;}
@@ -194,6 +194,9 @@ body{font-family: 'Montserrat','Noto Sans KR', sans-serif; height:100vh;}
 .beksul_family .text_wrap p:nth-of-type(8){top:74.5%; left:56.8%;}
 .beksul_family .text_wrap p:nth-of-type(9){top:80.5%; left:63.5%;}
 .beksul_family .text_wrap p:nth-of-type(10){top:67.7%; left:79%;}
+
+.beksul_family .family_img img{max-width: 100%; background:center center no-repeat; background-size: cover;vertical-align: middle;}
+.beksul_family .family_img .family_950{display:none;}
 
 /* brand slide Style Code */
 .brand_slide{width:100%; display:flex; background:#f0f0f0;align-items: center; justify-content: center; padding:50px 0;}
