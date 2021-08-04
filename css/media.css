@@ -1,20 +1,24 @@
 @media screen and (max-width:1450px){
+   /* Beksul_family Style Code */
   .beksul_family .text_wrap p{font-size:18px;}
   .beksul_family .text_wrap p:nth-of-type(2){left:34%;}
 }
 
 @media screen and (max-width:1350px){
+  /* Header Section Style Code */
   .logo_section .global_icon{display:none;}
   .nav_icon .cjbio{display:none;}
   .navi header .nav_txt p{font-size:15px; font-weight: 600; padding:0 10px;}
 }
 
 @media screen and (max-width:1150px){
+  /* Header Section Style Code */
   .navi header .nav_txt p{font-size:14.5px;}
   .navi .sub_nav{padding:10px 40px;}
   .navi header .nav_txt{display:none;}
   .navi header .nav_bars{display:block;}
 
+  /* SubPage Style Section */
   .sub_info .information{padding:100px;}
 
   /* History Style Code */
@@ -64,6 +68,7 @@
 }
 
 @media screen and (max-width:950px){
+   /* SubPage Style Section */
   .sub_info .information{display:flex;padding:50px;}
   .sub_info .information .info_img{width:550px; height:550px; display:flex;align-items: center;justify-content: center;padding:0;}
   .sub_info .information .info_img .info_txt h1{font-size:40px; padding:0 0 30px 0;}
@@ -100,6 +105,7 @@
 }
 
 @media screen and (max-width:750px){
+   /* SubPage Style Section */
   .sub_infoimg .sub_bg .symbol .symbol_txt{padding:50px 0 30px 0;}
   .sub_infoimg .sub_bg .symbol h2{font-size:26px;}
   .sub_infoimg .sub_bg .symbol p{font-size:16px;}
@@ -141,6 +147,7 @@
 }
 
 @media screen and (max-width:650px){
+   /* SubPage Style Section */
   .sub_info .information .info_img{width:500px; height:500px;}
   .sub_info .information .info_img .info_txt h1{font-size:35px;}
   .sub_info .information .info_img .info_txt p:nth-of-type(1){font-size:23px;}
@@ -161,9 +168,14 @@
 
   .middle_container .with_beksul p{font-size:23px;}
   .middle_container .with_beksul::before{width:76px; height: 68px; background-size:cover;left:50px;}
+
+  /* Beksul_family Style Code */
+  .beksul_family h3{font-size:25px; top:30px;}
+  .beksul_family .text_wrap p{font-size:18px;}
 }
 
 @media screen and (max-width:500px){
+   /* SubPage Style Section */
   .sub_info .information .info_img{width:400px; height:400px;}
   .sub_info .information .info_img .info_txt h1{font-size:28px;}
   .sub_info .information .info_img .info_txt p:nth-of-type(1){font-size:18px;}
@@ -231,9 +243,14 @@
   .middle_container .with_beksul p{font-size:20px;}
   .middle_container .with_beksul::before{width:34px; height:30px;left:0px;top:33px;}
 
+  /* Beksul_family Style Code */
+  .beksul_family h3{font-size:20px; padding:10px 0;}
+  .beksul_family .text_wrap p{font-size:13px;}
+
 }
 
 @media screen and (max-width:400px){
+  /* Header Section Style Code */
   .navi header{padding:5px 15px;}
   header .nav_icon p{display:none;}
   .navi header .nav_bars{display:flex;justify-content: flex-end;}
@@ -243,6 +260,7 @@
   .main_imgs .main_button{width:150px; height:40px;line-height: 40px;}
   .main_imgs .main_button span{font-size:13px;}
 
+   /* SubPage Style Section */
   .sub_info .information .info_img{width:250px;height:250px;}
   .sub_info .information .info_img .info_txt h1{display:none;}
   .sub_info .information .info_img .info_txt p:nth-of-type(1){font-size:16px;}
@@ -251,5 +269,12 @@
   .sub_infoimg .sub_bg .symbol .sub_imgs .img1,
   .sub_infoimg .sub_bg .symbol .sub_imgs .img2{height:170px;background-size:cover;}
 
+   /* Beksul_family Style Code */
+  .beksul_family h3{font-size:17px;top:13px;}
+  .beksul_family .text_wrap p{font-size:12px;}
+  .beksul_family .text_wrap p:nth-of-type(2){left:45%}
+  .beksul_family .text_wrap p:nth-of-type(3){left:35.5%;}
+  .beksul_family .text_wrap p:nth-of-type(5){left:39.5%;}
+  
 
 }

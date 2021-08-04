@@ -201,10 +201,14 @@ body{font-family: 'Montserrat','Noto Sans KR', sans-serif; height:100vh;}
 /* brand slide Style Code */
 .brand_slide{width:100%; display:flex; background:#f0f0f0;align-items: center; justify-content: center; padding:50px 0;}
 .brand_slide .brand_slide_bg h3{font-size:26px; color:#8d2125; text-align: center;padding-bottom: 70px;}
-.brand_slide .slide_setion{display: flex; text-align: center; padding-bottom: 50px;font-size:18px;}
+
+.brand_slide .slide_setion{width:300%;height: auto;}
+.brand_slide .slide_setion .slide_loof{display: flex; text-align: center;font-size:18px;width:100%}
 .brand_slide .slide_setion .slide_logo{border-right:1px solid #ccc;}
 .brand_slide .slide_setion .slide_logo:last-child{border:none;}
 
+.brand_slide .slide_dots {width:100%;display: flex; justify-content: center; padding-top:50px;}
+.brand_slide .slide_dots span{width:10px; height:10px;background:#ccc;border-radius:50%; margin:0 10px;}
 /* Footer Style Code */
 .footer{width:100%; height: auto;padding:40px 0 20px 20px;}
 .footer ul{display:flex;}
