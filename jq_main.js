@@ -136,7 +136,7 @@ $(document).ready(function () {
     item: 5,
     autoWidth: false,
     slideMove: 1, // slidemove will be 1 if loop is true
-    slideMargin: 10,
+    slideMargin: 0,
 
     addClass: "",
     mode: "slide",
