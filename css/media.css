@@ -9,6 +9,9 @@
   .logo_section .global_icon{display:none;}
   .nav_icon .cjbio{display:none;}
   .navi header .nav_txt p{font-size:15px; font-weight: 600; padding:0 10px;}
+
+  /* Slide Section Style Code */
+  .brand_slide{padding:50px 80px;}
 }
 
 @media screen and (max-width:1150px){
@@ -64,6 +67,10 @@
    /* Beksul_family Style Code */
   .beksul_family h3{font-size:45px;}
   .beksul_family .text_wrap p{font-size:16px;}
+
+  /* Slide Section Style Code */
+  .brand_slide{padding: 50px 60px;}
+  .brand_slide .slide_setion li img{width:180px;}
   
 }
 
@@ -102,6 +109,14 @@
 
   .beksul_family .family_img img{display:none;}
   .beksul_family .family_img .family_950{display:block;margin:auto;width:70%;}
+
+  /* Slide Section Style Code */
+  .brand_slide{height:350px;}
+  .brand_slide .slide_setion li img{width:130px;}
+
+  /* Footer Style Code */
+  .footer .footer_txt{display:flex;flex-direction:column;align-items:center;}
+  .footer .txt_1 li, .footer .txt_2 li{font-size:12px;}
 }
 
 @media screen and (max-width:750px){
@@ -144,6 +159,12 @@
   .history .history_bg .history_wrap .right_history_3rd::after{display:block;right:148.5px;}
   .history .history_bg .history_wrap .left_history_4rd::after{display:block;left:154px;}
   .history .history_bg .history_wrap .right_history_4rd::after{display:block;right:164px;}
+
+  /* Slide Section Style Code */
+  .brand_slide .slide_cate{font-size:23px;}
+
+  
+
 }
 
 @media screen and (max-width:650px){
@@ -172,6 +193,10 @@
   /* Beksul_family Style Code */
   .beksul_family h3{font-size:25px; top:30px;}
   .beksul_family .text_wrap p{font-size:18px;}
+  .brand_slide{padding:50px;}
+  .brand_slide .slide_setion li img{width:100px;}
+  .brand_slide .slide_setion li p{font-size:14px;}
+
 }
 
 @media screen and (max-width:500px){
@@ -247,6 +272,8 @@
   .beksul_family h3{font-size:20px; padding:10px 0;}
   .beksul_family .text_wrap p{font-size:13px;}
 
+  /* Slide Section Style Code */
+  .brand_slide .slide_setion li img{width:70px;}
 }
 
 @media screen and (max-width:400px){
@@ -275,6 +302,11 @@
   .beksul_family .text_wrap p:nth-of-type(2){left:45%}
   .beksul_family .text_wrap p:nth-of-type(3){left:35.5%;}
   .beksul_family .text_wrap p:nth-of-type(5){left:39.5%;}
+
+  /* Slide Section Style Code */
+  .brand_slide{height:200px;}
+  .brand_slide .slide_setion li p{display:none;}
+  .lSSlideOuter .lSPager.lSpg{display:none;}
   
 
 }
