@@ -158,7 +158,7 @@
     display: block;
     top: 50%;
     height: 32px;
-    background-image: url('../img/controls.png');
+    background-image: url('/renewal_beksul/img/controls.png');
     cursor: pointer;
     position: absolute;
     z-index: 99;
@@ -237,7 +237,7 @@
     padding-right: 0;
 }
 .lSSlideOuter .lightSlider > *,  .lSSlideOuter .lSGallery li {
-    float: left;
+    float: left; display:flex;justify-content:center;
 }
 .lSSlideOuter.lSrtl .lightSlider > *,  .lSSlideOuter.lSrtl .lSGallery li {
     float: right !important;
